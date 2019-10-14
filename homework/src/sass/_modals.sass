@@ -1,0 +1,68 @@
+.overlay
+  position: fixed
+  display: none
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 3
+  background-color: rgba(0, 0, 0, 0.4)
+  .popup
+    position: fixed
+    left: 50% /* подвинуть от левого края на 50% */
+    top: 100px
+    width: 752px
+    transform: translateX(-50%) /* подвинуть по оси Х на половину своего размера влево */
+    &-close
+      position: absolute
+      right: -20px
+      top: -32px
+      font-size: 35px
+      font-weight: 300
+      color: #ffffff
+      cursor: pointer
+    &-title
+      display: block
+      width: 100%
+      min-height: 67px
+      margin: 0
+      background-color: #ff9d00  
+      color: #ffffff
+      text-transform: uppercase
+      font-size: 21px
+      font-weight: 500
+      line-height: 67px /* опускаем текст в центр, 67пкс соответствует минимальной высоте в 67пкс */
+      text-align: center
+    &-form
+      padding: 35px 88px 47px 88px
+      background: url(../img/modals/modal-bg.jpg) center no-repeat
+      background-size: cover
+      color: $text-color-light
+      &-header
+        padding: 0
+        font-size: 30px
+        font-weight: 400
+        line-height: 27px
+        text-align: center
+        span
+          font-size: 24px
+      &__label
+        display: block
+        margin-top: 23px
+        font-size: 20px
+        line-height: 30px
+        font-weight: 300
+        text-align: center    
+      &__input
+        padding-left: 10px
+        margin-top: 17px
+        margin-right: 16px
+        width: 365px
+        height: 56px 
+        border: none
+        border-radius: 5px 
+      &__note
+        margin-top: 10px
+        font-size: 14px
+        line-height: 30px
+        font-weight: 300
+        text-align: center  
